@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al Karama</title>
+    <!-- render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main template css file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- cairo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">الأخبار</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html">المباريات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">حول النادي</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">التاريخ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- landing -->
+    <div class="hero">
+      <div id="landing" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/landing.png" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="images/landing-2.png" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#landing"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#landing"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="box container-fluid">
+        <div class="more">اكتشف المزيد</div>
+        <div class="match">
+          <h2>المباراة القادمة</h2>
+          <div class="content">
+            <div class="team">
+              <div class="image">
+                <img src="images/team1.png" alt="" />
+              </div>
+              <div class="name">اسم النادي</div>
+            </div>
+            <div class="text">
+              <h3>VS</h3>
+              <p>00:14 PM</p>
+            </div>
+            <div class="team">
+              <div class="image">
+                <img src="images/team2.png" alt="" />
+              </div>
+              <div class="name">اسم النادي</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- latest news -->
+    <div class="latest-news">
+      <div class="container-fluid">
+        <h2 class="main-title">اخر الاخبار</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="holder">
+              <div class="image">
+                <div class="text">عنوان الخبر هنا</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-6">
+            <div class="holder">
+              <div class="image">
+                <div class="text">عنوان الخبر هنا</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-6">
+            <div class="holder">
+              <div class="image">
+                <div class="text">عنوان الخبر هنا</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="holder">
+              <div class="image">
+                <div class="text">عنوان الخبر هنا</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- league -->
+    <div class="league">
+      <div class="container-fluid">
+        <header>
+          <h2 class="main-title">جدول الدوري السوري</h2>
+          <div class="image">
+            <img src="images/league-header.png" alt="" />
+          </div>
+        </header>
+        <table>
+          <thead>
+            <tr>
+              <th>الفريق</th>
+              <th>لعب</th>
+              <th>خسارة</th>
+              <th>تعادل</th>
+              <th>فاز</th>
+              <th>المتبقيه</th>
+              <th>+/-</th>
+              <th>فرق</th>
+              <th>نقاط</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="الفريق">
+                <div class="holder">
+                  <img src="images/league.png" alt="" />
+                  <div class="text">الكرامة</div>
+                </div>
+              </td>
+              <td data-label="لعب">
+                <div class="content">12</div>
+              </td>
+              <td data-label="خسارة">
+                <div class="content">5</div>
+              </td>
+              <td data-label="تعادل">
+                <div class="content">2</div>
+              </td>
+              <td data-label="فاز">
+                <div class="content">7</div>
+              </td>
+              <td data-label="المتبقيه">
+                <div class="content">0</div>
+              </td>
+              <td data-label="+/-">
+                <div class="content">3</div>
+              </td>
+              <td data-label="فرق">
+                <div class="content">3</div>
+              </td>
+              <td data-label="نقاط">
+                <div class="content">6</div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="الفريق">
+                <div class="holder">
+                  <img src="images/league.png" alt="" />
+                  <div class="text">الوثبة</div>
+                </div>
+              </td>
+              <td data-label="لعب">
+                <div class="content">12</div>
+              </td>
+              <td data-label="خسارة">
+                <div class="content">5</div>
+              </td>
+              <td data-label="تعادل">
+                <div class="content">2</div>
+              </td>
+              <td data-label="فاز">
+                <div class="content">7</div>
+              </td>
+              <td data-label="المتبقيه">
+                <div class="content">0</div>
+              </td>
+              <td data-label="+/-">
+                <div class="content">3</div>
+              </td>
+              <td data-label="فرق">
+                <div class="content">3</div>
+              </td>
+              <td data-label="نقاط">
+                <div class="content">6</div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="الفريق">
+                <div class="holder">
+                  <img src="images/league.png" alt="" />
+                  <div class="text">الاتحاد</div>
+                </div>
+              </td>
+              <td data-label="لعب">
+                <div class="content">12</div>
+              </td>
+              <td data-label="خسارة">
+                <div class="content">5</div>
+              </td>
+              <td data-label="تعادل">
+                <div class="content">2</div>
+              </td>
+              <td data-label="فاز">
+                <div class="content">7</div>
+              </td>
+              <td data-label="المتبقيه">
+                <div class="content">0</div>
+              </td>
+              <td data-label="+/-">
+                <div class="content">3</div>
+              </td>
+              <td data-label="فرق">
+                <div class="content">3</div>
+              </td>
+              <td data-label="نقاط">
+                <div class="content">6</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- next-match -->
+    <div class="next-match">
+      <div class="container-fluid">
+        <h2 class="main-title">المباريات القادمة</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <header>
+                <h3>الجمعة، 2023/05/26</h3>
+                <p>12 : 12 عصراً</p>
+              </header>
+              <div class="body">
+                <div class="team">
+                  <img src="images/next-match-1.png" alt="" />
+                  <p>جبلة</p>
+                </div>
+                <div class="text">
+                  <h4>ملعب خالد بن الوليد</h4>
+                  <p>0 : 1</p>
+                </div>
+                <div class="team">
+                  <img src="images/next-match-2.png" alt="" />
+                  <p>الكرامة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <header>
+                <h3>الجمعة، 2023/05/26</h3>
+                <p>12 : 12 عصراً</p>
+              </header>
+              <div class="body">
+                <div class="team">
+                  <img src="images/next-match-1.png" alt="" />
+                  <p>جبلة</p>
+                </div>
+                <div class="text">
+                  <h4>ملعب خالد بن الوليد</h4>
+                  <p>0 : 1</p>
+                </div>
+                <div class="team">
+                  <img src="images/next-match-2.png" alt="" />
+                  <p>الكرامة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <header>
+                <h3>الجمعة، 2023/05/26</h3>
+                <p>12 : 12 عصراً</p>
+              </header>
+              <div class="body">
+                <div class="team">
+                  <img src="images/next-match-1.png" alt="" />
+                  <p>جبلة</p>
+                </div>
+                <div class="text">
+                  <h4>ملعب خالد بن الوليد</h4>
+                  <p>0 : 1</p>
+                </div>
+                <div class="team">
+                  <img src="images/next-match-2.png" alt="" />
+                  <p>الكرامة</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Championships -->
+    <div class="championships">
+      <div class="container-fluid">
+        <h2 class="main-title">البطولات</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="images/champions-1.png" alt="" />
+              <p>اسم البطولة (2024)</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="images/champions-2.png" alt="" />
+              <p>اسم البطولة (2024)</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="content">
+              <img src="images/champions-3.png" alt="" />
+              <p>اسم البطولة (2024)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- goals -->
+    <div class="goals">
+      <div class="container-fluid">
+        <h2 class="main-title">اجمل الاهداف</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image">
+              <img src="images/viedo-play.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="holder">
+              <div class="box">
+                <div class="image">
+                  <img src="images/goals.png" alt="" />
+                </div>
+                <div class="videos">
+                  <h3>أهداف الكرامة على جونبورك الكوري/نهائي ابطال أسيا</h3>
+                  <div class="footer">
+                    <div class="view">
+                      <div class="image">
+                        <img src="images/view.svg" alt="" />
+                      </div>
+                      <p>2ألف مشاهدة</p>
+                    </div>
+                    <p>قبل 5 أشهر</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="image">
+                  <img src="images/goals.png" alt="" />
+                </div>
+                <div class="videos">
+                  <h3>أهداف الكرامة على جونبورك الكوري/نهائي ابطال أسيا</h3>
+                  <div class="footer">
+                    <div class="view">
+                      <div class="image">
+                        <img src="images/view.svg" alt="" />
+                      </div>
+                      <p>2ألف مشاهدة</p>
+                    </div>
+                    <p>قبل 5 أشهر</p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="image">
+                  <img src="images/goals.png" alt="" />
+                </div>
+                <div class="videos">
+                  <h3>أهداف الكرامة على جونبورك الكوري/نهائي ابطال أسيا</h3>
+                  <div class="footer">
+                    <div class="view">
+                      <div class="image">
+                        <img src="images/view.svg" alt="" />
+                      </div>
+                      <p>2ألف مشاهدة</p>
+                    </div>
+                    <p>قبل 5 أشهر</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="info">
+          <div class="content">
+            <div class="image">
+              <img src="images/footer-logo.png" alt="" />
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <h3>الكرامة</h3>
+                <ul>
+                  <li>الأخبار</li>
+                  <li>المبارايات</li>
+                  <li>حول النادي</li>
+                  <li>اللاعبين</li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <h3>المساعدة</h3>
+                <ul>
+                  <li>اتصل بنا</li>
+                  <li>الإبلاغ والشكاوي</li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <h3>حمل التطبيق</h3>
+                <ul class="download">
+                  <li>
+                    <img src="images/google play.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="images/app store.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="holder">
+            <p>اتصل بنا . سياسة الخصوصية . تفضيلات ملفات تعريف الإرتباط</p>
+            <ul class="images">
+              <li>
+                <img src="images/youtube.png" alt="" />
+              </li>
+              <li>
+                <img src="images/facebook.png" alt="" />
+              </li>
+              <li>
+                <img src="images/twitter.png" alt="" />
+              </li>
+              <li>
+                <img src="images/instagram.png" alt="" />
+              </li>
+            </ul>
+            <p>جميع الحقوق محفوظة لنادي الكرامة</p>
+          </div>
+        </div>
+        <div class="sponsers">
+          <h3>SPONSORS</h3>
+          <div class="images">
+            <img src="images/sponsors.png" alt="" />
+            <img src="images/sponsors.png" alt="" />
+            <img src="images/sponsors.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
